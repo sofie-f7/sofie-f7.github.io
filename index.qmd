@@ -1,8 +1,8 @@
 ---
-title: "index"
+title: "Sofie Flom"
 format: html
 ---
 
 # Hello!
 
-Welcome to my Quarto website.
+Self introduction
