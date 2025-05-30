@@ -18,7 +18,9 @@ website:
 
 format:
   html:
-    theme: sketchy
+    theme: 
+      - sketchy
+      - styles.scss
     toc: true
 
 about: jolla

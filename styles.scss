@@ -1,0 +1,16 @@
+/*-- scss:defaults --*/
+
+$light-green: #D1D9CE;
+$dark-blue: #003d80;
+$cream: #FDFBF7;
+$dark-green: #858E79;
+
+// Base document colors
+$navbar-bg: $cream; // navbar
+$navbar-fg: $dark-green; // navbar foreground elements
+$body-bg: $light-green; // page background 
+$body-color: $dark-blue; // page text 
+$footer-bg: $cream; // footer 
+
+$code-bg: $cream; // inline code background color
+$code-color: $dark-green; // inline code text color
