@@ -1,7 +1,7 @@
 ---
 title: "Sofie Flom"
 format: html
-image: /Users/sofieflom/Desktop/IMG_8602.JPG
+image: IMG_8602.JPG
 toc: false
 about:
   template: jolla 
