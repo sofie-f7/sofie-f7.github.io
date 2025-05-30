@@ -8,13 +8,16 @@ about:
   image-shape: round
   image-width: 17em
   links: # create buttons
-    - text: LinkedIn
+    - icon: linkedin
+      text: LinkedIn
       href: www.linkedin.com/in/sofia-flom-946906351
       target: _blank # opens link in a new browser tab
-    - text: GitHub
+    - icon: github
+      text: GitHub
       href: https://github.com/sofie-f7
       target: _blank 
-    - text: Email
+    - icon: envelope
+      text: Email
       href: mailto:sofieflom@ucsb.edu 
 ---
 

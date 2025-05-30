@@ -8,14 +8,17 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - About.qmd
-      - projects.qmd
-      - jewelry.qmd
+      - href: About.qmd
+        text: About Me
+      - href: projects.qmd
+        text: Projects
+      - href: jewelry.qmd
+        text: Jewelry! 
       - resume.qmd
 
 format:
   html:
-    theme: default
+    theme: sketchy
     toc: true
 
 about: jolla
