@@ -1,8 +1,20 @@
 ---
 title: "Sofie Flom"
 format: html
+image: /Users/sofieflom/Desktop/IMG_8602.JPG
+toc: false
+about:
+  template: jolla 
+  image-shape: round
+  image-width: 17em
+  links: # create buttons
+    - text: LinkedIn
+      href: www.linkedin.com/in/sofia-flom-946906351
+      target: _blank # opens link in a new browser tab
+    - text: GitHub
+      href: https://github.com/sofie-f7
+      target: _blank 
+    - text: Email
+      href: mailto:sofieflom@ucsb.edu 
 ---
 
-# Hello!
-
-Self introduction

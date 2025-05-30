@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "My Quarto Site"
+  title: "Sofie Flom"
   navbar:
     left:
       - href: index.qmd
