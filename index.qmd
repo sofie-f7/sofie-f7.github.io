@@ -10,7 +10,7 @@ about:
   links: # create buttons
     - icon: linkedin
       text: LinkedIn
-      href: www.linkedin.com/in/sofia-flom-946906351
+      href: https://www.linkedin.com/in/sofia-flom-946906351
       target: _blank # opens link in a new browser tab
     - icon: github
       text: GitHub
@@ -20,4 +20,6 @@ about:
       text: Email
       href: mailto:sofieflom@ucsb.edu 
 ---
+Welcome! I'm Sofie Flom, and I'm a third-year Environmental Studies B.S. student at UC Santa Barbara. I am currently interested in many fields in Environmental Studies, including ecology, social justice, renewable energy, and GIS. I am considering a career in GIS and will be an intern in the BEL Program this summer! 
 
+Beyond studying, I spend a lot of time outdoors and playing sports. I am currently on the UCSB Women's Rugby team, and I also enjoy playing soccer, surfing, hiking, and spending time at the beach.
