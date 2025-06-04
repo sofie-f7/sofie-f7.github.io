@@ -2,7 +2,6 @@
 title: "My Recent Coding Project"
 description: "Fire and particulate matter line graph"
 format: html
-categories: "Coding"
 ---
 In my Statistics for Environmental Science class, I created a line graph visualizing EPA data on particulate matter during the Thomas Fire for one of my assignments. In 2017-2018, this fire burned 281,893 acres in Ventura County and Santa Barbara County, starting on December 4th and being fully contained on January 12, 2018. 
 
