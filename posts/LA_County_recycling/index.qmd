@@ -1,8 +1,11 @@
 ---
 title: "Recycling and Composting in LA County Interactive Map"
 format: html
+image: image-preview.png
 ---
-<iframe src="https://www.google.com/maps/d/embed?mid=18-E_hdalgC9eUqHLC0sk_CeFbZnLQkg&ehbc=2E312F" width="640" height="480"></iframe>
+<div style="margin-top: -3em;">
+  <iframe src="https://www.google.com/maps/d/embed?mid=18-E_hdalgC9eUqHLC0sk_CeFbZnLQkg&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
 
 I created this interactive map during my internship at Heal the Bay during the summmer of 2024. I was inspired to do this project after learning in one of my classes about the actual amount of recycling material that gets recycled in the U.S. once it is thrown away. After bringing this idea to my mentor, she mentioned that there are 88 cities in LA County, and each city actually has its own slightly different recycling and organic waste policies. I spent time familiarizing myself with the software of Google MyMaps and figuring out the most effective way to compile data for 88 cities. For each city, I searched google for its recycling and composting policies, then uploaded the spreadsheet of this information onto my map. 
 
