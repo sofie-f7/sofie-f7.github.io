@@ -2,4 +2,10 @@
 title: "About Me"
 format: html
 ---
+Outside of academics, I love being outside and playing sports.
 
+![I play for the UCSB Women's Rugby game! I have been on the team for one year, and plan on continuing next year as Outreach officer. My current positions are wing and scrumhalf.](IMG_1561.JPG)
+
+![I also play soccer! I started when I was 4 years old and mostly played club soccer, in addition to playing on my high school team. Here at UCSB, I play on an intermural team. This is a picture of my brother and me at a River Plate game in Argentina!](IMG_2187.JPG)
+
+![I love surfing and spending time at the beach in my freetime. I taught at a surf camp in Malibu for two years, and before that I was a camper there for awhile. The beach is one of the reasons why I love UCSB.](IMG_9201.PNG)
