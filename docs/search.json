@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Projects",
     "section": "",
-    "text": "Recycling and Composting in LA County Interactive Map\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "My Recent Coding Project\n\n\nFire and particulate matter line graph\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecycling and Composting in LA County Interactive Map\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -12,6 +12,13 @@
     "title": "Sofie Flom",
     "section": "",
     "text": "Welcome! I’m Sofie Flom, and I’m a third-year Environmental Studies B.S. student at UC Santa Barbara. I am currently interested in many fields in Environmental Studies, including ecology, social justice, renewable energy, and GIS. I am considering a career in GIS and will be an intern in the BEL Program this summer!\nBeyond studying, I spend a lot of time outdoors and playing sports. I am currently on the UCSB Women’s Rugby team, and I also enjoy playing soccer, surfing, hiking, and spending time at the beach."
+  },
+  {
+    "objectID": "posts/Code_project/index.html",
+    "href": "posts/Code_project/index.html",
+    "title": "My Recent Coding Project",
+    "section": "",
+    "text": "In my Statistics for Environmental Science class, I created a line graph visualizing EPA data on particulate matter during the Thomas Fire for one of my assignments. In 2017-2018, this fire burned 281,893 acres in Ventura County and Santa Barbara County, starting on December 4th and being fully contained on January 12, 2018.\n\nlibrary(tidyverse) #read in tidyverse package\n\nsbpm &lt;- read_csv(\"sbpm_copy.csv\") #read in Canvas data\n\nAbove, I am reading in my data and the packages that are necessary to create the plot that I want.\n\nggplot(data = sbpm, #data comes from the sbpm dataframe\n       aes(x = date, #make the x-axis the date\n           y = pm2_5, #make the y-axis the PM2.5 data\n           color = local_site_name, #color each line by the location of the sensor\n           shape = local_site_name)) + #each line/location should have a different shape to be redundant\n    geom_point() + #adds points\n    geom_line() + #adds the line\n    labs(x = \"Date\", #renames x-axis\n         y = \"PM2.5\", #renames y-axis\n         color = \"Location\", #relabelling the legend\n         shape = \"Location\") #labelling the legend\n\n\n\n\n\n\n\n\nHere is the plot I created. The different colors represent different locations where the particulate matter (PM2.5) was measured. The purpose of this line graph is to visualize the changes in PM2.5 through the timeline of the fire, and to compare PM2.5 levels at different locations."
   },
   {
     "objectID": "posts/LA_County_recycling/index.html",

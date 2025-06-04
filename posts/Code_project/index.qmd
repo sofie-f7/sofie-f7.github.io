@@ -1,0 +1,32 @@
+---
+title: "My Recent Coding Project"
+description: "Fire and particulate matter line graph"
+format: html
+---
+In my Statistics for Environmental Science class, I created a line graph visualizing EPA data on particulate matter during the Thomas Fire for one of my assignments. In 2017-2018, this fire burned 281,893 acres in Ventura County and Santa Barbara County, starting on December 4th and being fully contained on January 12, 2018. 
+
+```{r set up}
+#| message: false
+
+library(tidyverse) #read in tidyverse package
+
+sbpm <- read_csv("sbpm_copy.csv") #read in Canvas data
+```
+
+Above, I am reading in my data and the packages that are necessary to create the plot that I want.
+
+```{r line graph}
+ggplot(data = sbpm, #data comes from the sbpm dataframe
+       aes(x = date, #make the x-axis the date
+           y = pm2_5, #make the y-axis the PM2.5 data
+           color = local_site_name, #color each line by the location of the sensor
+           shape = local_site_name)) + #each line/location should have a different shape to be redundant
+    geom_point() + #adds points
+    geom_line() + #adds the line
+    labs(x = "Date", #renames x-axis
+         y = "PM2.5", #renames y-axis
+         color = "Location", #relabelling the legend
+         shape = "Location") #labelling the legend
+```
+
+Here is the plot I created. The different colors represent different locations where the particulate matter (PM2.5) was measured. The purpose of this line graph is to visualize the changes in PM2.5 through the timeline of the fire, and to compare PM2.5 levels at different locations. 

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Fire and particulate matter line graph">
 
-<title>Recycling and Composting in LA County Interactive Map – Sofie Flom</title>
+<title>My Recent Coding Project – Sofie Flom</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -117,8 +152,13 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Recycling and Composting in LA County Interactive Map</h1>
-                      </div>
+      <h1 class="title">My Recent Coding Project</h1>
+                  <div>
+        <div class="description">
+          Fire and particulate matter line graph
+        </div>
+      </div>
+                </div>
   </div>
   <div class="quarto-title-meta">
     </div>
@@ -129,10 +169,34 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <div class="quarto-about-jolla">
  <main class="content quarto-banner-title-block" id="quarto-document-content">
-<div style="margin-top: -3em; overflow: hidden;">
-<p><iframe src="https://www.google.com/maps/d/embed?mid=18-E_hdalgC9eUqHLC0sk_CeFbZnLQkg&amp;ehbc=2E312F" width="100%" height="100%" style="border: 0;"> </iframe></p>
+<p>In my Statistics for Environmental Science class, I created a line graph visualizing EPA data on particulate matter during the Thomas Fire for one of my assignments. In 2017-2018, this fire burned 281,893 acres in Ventura County and Santa Barbara County, starting on December 4th and being fully contained on January 12, 2018.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co">#read in tidyverse package</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sbpm <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"sbpm_copy.csv"</span>) <span class="co">#read in Canvas data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>I created this interactive map during my internship at Heal the Bay during the summmer of 2024. I was inspired to do this project after learning in one of my classes about the actual amount of recycling material that gets recycled in the U.S. once it is thrown away. After bringing this idea to my mentor, she mentioned that there are 88 cities in LA County, and each city actually has its own slightly different recycling and organic waste policies. I spent time familiarizing myself with the software of Google MyMaps and figuring out the most effective way to compile data for 88 cities. For each city, I searched google for its recycling and composting policies, then uploaded the spreadsheet of this information onto my map.</p>
+<p>Above, I am reading in my data and the packages that are necessary to create the plot that I want.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> sbpm, <span class="co">#data comes from the sbpm dataframe</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="co">#make the x-axis the date</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> pm2_5, <span class="co">#make the y-axis the PM2.5 data</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> local_site_name, <span class="co">#color each line by the location of the sensor</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">shape =</span> local_site_name)) <span class="sc">+</span> <span class="co">#each line/location should have a different shape to be redundant</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span> <span class="co">#adds points</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span> <span class="co">#adds the line</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, <span class="co">#renames x-axis</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">y =</span> <span class="st">"PM2.5"</span>, <span class="co">#renames y-axis</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">color =</span> <span class="st">"Location"</span>, <span class="co">#relabelling the legend</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">shape =</span> <span class="st">"Location"</span>) <span class="co">#labelling the legend</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/line graph-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Here is the plot I created. The different colors represent different locations where the particulate matter (PM2.5) was measured. The purpose of this line graph is to visualize the changes in PM2.5 through the timeline of the fire, and to compare PM2.5 levels at different locations.</p>
 
 
 </main>  
