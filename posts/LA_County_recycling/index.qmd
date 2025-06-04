@@ -1,7 +1,6 @@
 ---
 title: "Recycling and Composting in LA County Interactive Map"
 format: html
-image: IMG_8874.png
 ---
 <div style="margin-top: -3em;">
   <iframe src="https://www.google.com/maps/d/embed?mid=18-E_hdalgC9eUqHLC0sk_CeFbZnLQkg&ehbc=2E312F" width="640" height="480"></iframe>
