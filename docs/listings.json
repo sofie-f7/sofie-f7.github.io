@@ -5,5 +5,17 @@
       "/posts/Code_project/index.html",
       "/posts/LA_County_recycling/index.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/About.html",
+      "/jewelry.html",
+      "/posts/Code_project/index.html",
+      "/posts.html",
+      "/posts/LA_County_recycling/index.html",
+      "/resume.html",
+      "/index.html"
+    ]
   }
 ]

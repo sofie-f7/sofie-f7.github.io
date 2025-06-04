@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 format: html
-categories: false
+listing:
+  categories: true
 ---
 

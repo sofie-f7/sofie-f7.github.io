@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Projects",
     "section": "",
-    "text": "My Recent Coding Project\n\n\nFire and particulate matter line graph\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecycling and Composting in LA County Interactive Map\n\n\nAn interactive map showing recycling and composting policies across all 88 cities in LA County.\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "My Recent Coding Project\n\n\n\nCoding\n\n\n\nFire and particulate matter line graph\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecycling and Composting in LA County Interactive Map\n\n\n\nInteractive Map\n\n\n\nAn interactive map showing recycling and composting policies across all 88 cities in LA County.\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -33,6 +33,13 @@
     "title": "Recycling and Composting in LA County Interactive Map",
     "section": "",
     "text": "I created this interactive map during my internship at Heal the Bay during the summmer of 2024. I was inspired to do this project after learning in one of my classes about the actual amount of recycling material that gets recycled in the U.S. once it is thrown away. After bringing this idea to my mentor, she mentioned that there are 88 cities in LA County, and each city actually has its own slightly different recycling and organic waste policies. I spent time familiarizing myself with the software of Google MyMaps and figuring out the most effective way to compile data for 88 cities. For each city, I searched google for its recycling and composting policies, then uploaded the spreadsheet of this information onto my map."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "About Me\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJewelry!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy Recent Coding Project\n\n\n\n\n\n\nCoding\n\n\n\nFire and particulate matter line graph\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRecycling and Composting in LA County Interactive Map\n\n\n\n\n\n\nInteractive Map\n\n\n\nAn interactive map showing recycling and composting policies across all 88 cities in LA County.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResume\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSofie Flom\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "About.html",
