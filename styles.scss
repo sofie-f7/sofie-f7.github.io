@@ -16,11 +16,7 @@ $code-bg: $cream; // inline code background color
 $code-color: $dark-green; // inline code text color
 
 /*-- scss:rules --*/
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
 main {
-  font-family: "Rancho", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
+  font-size: 25px;
 }
