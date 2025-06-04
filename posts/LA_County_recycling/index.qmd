@@ -1,13 +1,15 @@
 ---
 title: "Recycling and Composting in LA County Interactive Map"
 format: html
+listing:
+  image: IMG_8874.png
 description: "An interactive map showing recycling and composting policies across all 88 cities in LA County."
 ---
 <div style="margin-top: -3em; overflow: hidden;">
   <iframe 
     src="https://www.google.com/maps/d/embed?mid=18-E_hdalgC9eUqHLC0sk_CeFbZnLQkg&ehbc=2E312F" 
-    width="100%" 
-    height="100%" 
+    width="640" 
+    height="480" 
     style="border: 0;">
   </iframe>
 </div>
