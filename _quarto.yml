@@ -10,7 +10,7 @@ website:
         text: Home
       - href: About.qmd
         text: About Me
-      - href: projects.qmd
+      - href: posts.qmd
         text: Projects
       - href: jewelry.qmd
         text: Jewelry! 
