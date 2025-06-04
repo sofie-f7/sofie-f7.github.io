@@ -6,22 +6,23 @@ format: html
 Another freetime activity of mine is jewelry-making. I make necklaces, bracelets, and earrings, as shown below. More pictures to be added soon!
 
 ## Necklaces
-
+::: {.gallery}
 ![](necklace1.jpg)
 ![](necklace2.jpg)
 ![](necklace3.jpg)
 ![](necklace4.jpg)
 ![](necklace5.jpg)
 ![](necklace6.jpg)
-
+:::
 ## Bracelets
-
+::: {.gallery}
 ![](Bracelet1.jpg)
 ![](Bracelet2.jpg)
 ![](Bracelet3.jpg)
-
+:::
 ## Earrings
-
+::: {.gallery}
 ![](Earring1.jpg)
 ![](Earring2.jpg)
 ![](Earring3.jpg)
+:::
