@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Projects",
     "section": "",
-    "text": "No matching items"
+    "text": "Recycling and Composting in LA County Interactive Map\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -12,6 +12,13 @@
     "title": "Sofie Flom",
     "section": "",
     "text": "Welcome! I’m Sofie Flom, and I’m a third-year Environmental Studies B.S. student at UC Santa Barbara. I am currently interested in many fields in Environmental Studies, including ecology, social justice, renewable energy, and GIS. I am considering a career in GIS and will be an intern in the BEL Program this summer!\nBeyond studying, I spend a lot of time outdoors and playing sports. I am currently on the UCSB Women’s Rugby team, and I also enjoy playing soccer, surfing, hiking, and spending time at the beach."
+  },
+  {
+    "objectID": "posts/LA_County_recycling/index.html",
+    "href": "posts/LA_County_recycling/index.html",
+    "title": "Recycling and Composting in LA County Interactive Map",
+    "section": "",
+    "text": "I created this interactive map during my internship at Heal the Bay during the summmer of 2024. I was inspired to do this project after learning in one of my classes about the actual amount of recycling material that gets recycled in the U.S. once it is thrown away. After bringing this idea to my mentor, she mentioned that there are 88 cities in LA County, and each city actually has its own slightly different recycling and organic waste policies. I spent time familiarizing myself with the software of Google MyMaps and figuring out the most effective way to compile data for 88 cities. For each city, I searched google for its recycling and composting policies, then uploaded the spreadsheet of this information onto my map."
   },
   {
     "objectID": "About.html",
